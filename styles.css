@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(145deg, #f5f4f4, #27531b46);
+    font-family: 'Arial', sans-serif;
+}
+
+.calculator {
+    background: #e0e0e0;
+    border-radius: 20px;
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    width: 300px;
+    transform: perspective(800px) rotateX(10deg) rotateY(-10deg);
+}
+
+.display {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: inset 5px 5px 10px #d1d1d1, inset -5px -5px 10px #ffffff;
+    padding: 20px;
+    font-size: 30PX;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    background: #e0e0e0;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+    font-size: 22.5px;
+    padding: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn:active {
+    box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+}
+
+.all-clear, .clear {
+    background: linear-gradient(145deg, #ff0000, #b30000);
+    color: white;
+    box-shadow: 5px 5px 10px #b30000, -5px -5px 10px #ff3333;
+}
+
+.clear:hover, .all-clear:hover {
+    background: linear-gradient(145deg, #ff6666, #d64545);
+}
